@@ -28,7 +28,7 @@ import matplotlib.pyplot as plt
 import bcrypt
 import io
 
-DB_PATH = "calorie_tracker_full.db"
+DB_PATH = "calorie_tracker.db"
 
 # ----------------------
 # Database & helpers
@@ -456,3 +456,4 @@ with right:
 
 # Footer
 st.markdown("Made with ❤️ — track your calories easily!")
+
