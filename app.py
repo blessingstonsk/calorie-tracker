@@ -370,7 +370,7 @@ with left:
         kcal, protein, carbs, fat = calc_from_food_row(row, weight)
         log_food(user_id, date.today().isoformat(), datetime.now().strftime('%H:%M:%S'), food_choice, float(weight), float(kcal), float(protein), float(carbs), float(fat), meal)
         st.success(f'Logged {food_choice} — {weight}g — {kcal:.2f} kcal')
-        st.experimental_rerun()
+        st.rerun()
 
     st.markdown('---')
     st.subheader('Add / Edit custom food')
@@ -456,4 +456,5 @@ with right:
 
 # Footer
 st.markdown("Made with ❤️ — track your calories easily!")
+
 
